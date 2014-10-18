@@ -18,7 +18,7 @@ var BaseModule = angular.module('base', ['ui.router'])
 		$urlRouterProvider
         //.when('/c?id', '/contacts/:id')
         //.when('/user/:id', '/contacts/:id')
-        .otherwise('/login');
+        .otherwise('/mg2048/index');
 		  
 		$stateProvider
 		    .state("login", {
@@ -26,11 +26,6 @@ var BaseModule = angular.module('base', ['ui.router'])
 			 templateUrl: 'modules/base/views/login/login.htm'
 			 // controller: 'LoginController'
 		 })
-		    .state("home", {
-			  abstract: true,
-			  url: "/home",
-			  templateUrl: 'Html/home/home.htm'
-		  })
     }]);
 	return BaseModule;
 });
