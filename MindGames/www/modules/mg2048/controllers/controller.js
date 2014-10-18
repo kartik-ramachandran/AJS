@@ -4,16 +4,16 @@ define(['angular', '../module'], function (angular) {
 	.controller('mg2048controller', ['$scope', function ($scope) {
 	    $scope.init = function () {
 	        require([
-                './js/bind_polyfill',
-	            './js/classlist_polyfill',
-	            './js/animframe_polyfill',
-	            './js/keyboard_input_manager',
-	            './js/html_actuator',
-	            './js/grid',
-	            './js/tile',
-	            './js/local_storage_manager',
-	            './js/game_manager',
-	            './js/application'], function () { });
+                './mg2048/js/bind_polyfill',
+	            './mg2048/js/classlist_polyfill',
+	            './mg2048/js/animframe_polyfill',
+	            './mg2048/js/keyboard_input_manager',
+	            './mg2048/js/html_actuator',
+	            './mg2048/js/grid',
+	            './mg2048/js/tile',
+	            './mg2048/js/local_storage_manager',
+	            './mg2048/js/game_manager',
+	            './mg2048/js/application'], function () { });
 	    }
 	}])
 	.controller('mg2048indexcontroller', ['$scope', function ($scope) {

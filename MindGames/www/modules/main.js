@@ -17,8 +17,8 @@ shim:{
 waitSeconds: 15,
  deps:[]
 });
-require(['angular', 'maincontroller','base/main', 'mg2048/main'], function(angular){
+require(['angular', 'maincontroller'], function(angular){
 	angular.element( document ).ready( function() {
-	    angular.bootstrap( document, [ 'myApp', 'base', 'mg2048' ] );
+	    angular.bootstrap( document, [ 'myApp'] );
 	});
 })

@@ -1,5 +1,5 @@
-define(['angularAMD', 'angular','ui.router'], function(angularAMD){
-    var app =  angular.module('myApp', ['ui.router'])
+define(['angularAMD', 'angular', 'ui.router', 'base/main'], function (angularAMD) {
+    var app =  angular.module('myApp', ['ui.router', 'base'])
 	.run(['$rootScope', '$state', '$stateParams',
     function ($rootScope, $state, $stateParams) {
         // It's very handy to add references to $state and $stateParams to the $rootScope

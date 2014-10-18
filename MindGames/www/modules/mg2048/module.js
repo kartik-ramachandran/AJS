@@ -12,12 +12,12 @@ var mg2048 = angular.module('mg2048', ['ui.router'])
         .otherwise('/mg2048');
 
 		$stateProvider
-		    .state("mg2048.index", {
+		    .state("index", {
 			 url: "/index",
 			 templateUrl: 'modules/mg2048/views/index.htm'
 			 // controller: ''
 		 })
-		 .state("mg2048.mg2048", {
+		 .state("mg2048", {
 			 url: "/mg2048",
 			 templateUrl: 'modules/mg2048/views/mg2048.htm'
 			 // controller: ''

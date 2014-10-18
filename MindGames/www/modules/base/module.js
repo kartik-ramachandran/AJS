@@ -1,8 +1,8 @@
-define(['angular', 'ui.router'], function(angular){
+define(['angular', 'ui.router','mg2048/main'], function(angular){
 // Warning: index.html ng-app value should be same as MODULE_NAME
 //var MODUEL_NAME = 'base';
 // Make sure to include the `ui.router` module as a dependency
-var BaseModule = angular.module('base', ['ui.router'])
+    var BaseModule = angular.module('base', ['ui.router', 'mg2048'])
 .run(['$rootScope', '$state', '$stateParams',
     function ($rootScope, $state, $stateParams) {
 
@@ -18,7 +18,7 @@ var BaseModule = angular.module('base', ['ui.router'])
 		$urlRouterProvider
         //.when('/c?id', '/contacts/:id')
         //.when('/user/:id', '/contacts/:id')
-        .otherwise('/mg2048/index');
+        .otherwise('/');
 		  
 		$stateProvider
 		    .state("login", {
