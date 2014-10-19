@@ -11,14 +11,14 @@ define(['angularAMD', 'angular', 'ui.router', 'base/main'], function (angularAMD
     }])
 	.config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
-		$urlRouterProvider.otherwise('/');
+		//$urlRouterProvider.otherwise('/');
 
-		$stateProvider
-		    .state("/", {
-			 url: "/",
-			 templateUrl: 'modules/base/views/index.htm'
-			 // controller: 'LoginController'
-		 })
+		//$stateProvider
+		//    .state("/", {
+		//	 url: "/",
+		//	 templateUrl: 'modules/base/views/index.htm'
+		//	 // controller: 'LoginController'
+		// })
     }]);
 	return app;
 });

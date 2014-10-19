@@ -15,17 +15,17 @@ define(['angular', 'ui.router','mg2048/main'], function(angular){
     }])
 	.config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
-		$urlRouterProvider
+		//$urlRouterProvider
         //.when('/c?id', '/contacts/:id')
         //.when('/user/:id', '/contacts/:id')
-        .otherwise('/');
+        //.otherwise('/');
 		  
-		$stateProvider
-		    .state("login", {
-			 url: "/login",
-			 templateUrl: 'modules/base/views/login/login.htm'
-			 // controller: 'LoginController'
-		 })
+		//$stateProvider
+		//    .state("login", {
+		//	 url: "/login",
+		//	 templateUrl: 'modules/base/views/login/login.htm'
+		//	 // controller: 'LoginController'
+		// })
     }]);
 	return BaseModule;
 });

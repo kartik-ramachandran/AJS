@@ -12,8 +12,12 @@ define(['angular', '../module'], function (angular) {
 	            './mg2048/js/grid',
 	            './mg2048/js/tile',
 	            './mg2048/js/local_storage_manager',
-	            './mg2048/js/game_manager',
-	            './mg2048/js/application'], function () { });
+	            './mg2048/js/game_manager'
+	        ], function () {
+	            window.requestAnimationFrame(function () {
+	                new GameManager(4, KeyboardInputManager, HTMLActuator, LocalStorageManager);
+	            });
+	        });
 	    }
 	}])
 	.controller('mg2048indexcontroller', ['$scope', function ($scope) {
