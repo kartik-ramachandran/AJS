@@ -1,0 +1,17 @@
+{
+  "name": "Mind Games",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "29",
+  "icons": {
+    "128": "./chromeApp/icon_128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["./chromeApp/background.js"]
+    }
+  },
+  "permissions": [
+    "identity"
+  ]
+}
